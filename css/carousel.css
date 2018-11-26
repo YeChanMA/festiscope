@@ -1,0 +1,35 @@
+/* Author: Carabit, Jeco */
+
+/* Declaring the heights because of positioning of the carousel images */
+.carousel {
+    margin-top: -100px;
+}
+
+/* The purpose of this is to display the carousel(slideshow)*/
+.carousel-item {
+    height: 750px;
+}
+
+/* The purpose of this is to align the text to the left above the carousel*/
+.carousel-caption {
+    bottom: 300px;
+    z-index: 50;
+    text-align: left;
+}
+
+/* The purpose of this is to allow the slideshow to work and let the users to navigate the carousel using the arrow keys*/
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 50rem;
+}
+
+@media (min-width: 768px) {
+    .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 1.4;
+    }
+}
